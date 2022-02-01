@@ -1,0 +1,374 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+        <title>LearnUp - Online Course & Education HTML Template</title>
+		 
+        <!-- Custom CSS -->
+        <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">
+		
+		<!-- Custom Color Option -->
+		<link href="{% static 'assets/css/colors.css' %}" rel="stylesheet">
+		
+    </head>
+	
+    <body class="red-skin">
+	
+        <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css' %} -->
+        <!-- ============================================================== -->
+        <div id="preloader"><div class="preloader"><span></span><span></span></div></div>
+		
+		
+        <!-- ============================================================== -->
+        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="main-wrapper">
+		
+            <!-- ============================================================== -->
+            <!-- Top header  -->
+            <!-- ============================================================== -->
+            <!-- Start Navigation -->
+			<div class="header header-light head-shadow">
+				<div class="container">
+					{% include 'navbar.html' %}
+				</div>
+			</div>
+			<!-- End Navigation -->
+			<div class="clearfix"></div>
+			<!-- ============================================================== -->
+			<!-- Top header  -->
+			<!-- ============================================================== -->
+			
+			<!-- ============================ Page Title Start================================== -->
+			<section class="page-title">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							
+							<div class="breadcrumbs-wrap">
+								<h1 class="breadcrumb-title">All Components</h1>
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="#">Home</a></li>
+										<li class="breadcrumb-item active" aria-current="page">Elements</li>
+									</ol>
+								</nav>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ============================ Page Title End ================================== -->	
+			
+			<!-- ============================ Agency List Start ================================== -->
+			<section class="pt-0">
+			
+				<div class="container">
+				
+					<!-- row Start -->
+					<div class="row">
+					
+						<div class="col-lg-6 col-md-12 col-sm-12">
+							<h4>Tabs Examples</h4>
+							<div class="custom-tab customize-tab tabs_creative">
+								<ul class="nav nav-tabs pb-2 b-0" id="myTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+									</div>
+									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+									</div>
+									<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-6 col-md-12 col-sm-12">
+							<h4>Accordion Examples</h4>
+							<div id="accordion" class="accordion custom_accordion">
+								<div class="card mb-0">
+									<a class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+										<h5 class="card-title">How You Manage it</h5>
+									</a>
+									<div id="collapseOne" class="card-body collapse" data-parent="#accordion" >
+										<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+											aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+											craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>
+									</div>
+									<a class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+										<h5 class="card-title">How You Manage it</h5>
+									</a>
+									<div id="collapseTwo" class="card-body collapse" data-parent="#accordion" >
+										<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+											aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+											craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>
+									</div>
+									<a class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+										<h5 class="card-title">How You Manage it</h5>
+									</a>
+									<div id="collapseThree" class="collapse" data-parent="#accordion" >
+										<div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+											aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore sustainable VHS.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!-- /row -->
+
+					<!-- row Start -->
+					<div class="row mt-4">
+					
+						<div class="col-lg-6 col-md-12 col-sm-12">
+							<h4>Typography</h4>
+							 <h1>Heading One</h1>
+                            <h2>Heading Two</h2>
+                            <h3>Heading Three</h3>
+                            <h4>Heading Four</h4>
+                            <h5>Heading Five</h5>
+                            <h6>Heading Six</h6>
+						</div>
+						
+						<div class="col-lg-6 col-md-12 col-sm-12">
+							<h4>Buttons</h4>
+							<button type="submit" class="btn btn-theme">Simple button</button></br>
+							<button type="submit" class="btn btn-theme btn-rounded">Simple button</button>
+							<button type="submit" class="btn btn-theme btn-md">Midium Button</button></br>
+							<button type="submit" class="btn btn-theme btn-lg">Large Button</button>
+							<button type="submit" class="btn btn-outline-theme">Outline Button</button></br></br>
+							<a href="#" class="btn btn-theme">Simple button</a></br>
+							<a href="#" class="btn btn-theme-2">Simple button</a>
+						</div>
+						
+					</div>
+					<!-- /row -->	
+
+					<!-- row Start -->
+					<div class="row mt-4">
+					
+						<div class="col-lg-6 col-md-12 col-sm-12">
+							<h4>Shadow & Simple Inputbox</h4>
+							
+							<form class="form-inline addons mb-3">
+								<input class="form-control" type="search" placeholder="Search Courses" aria-label="Search">
+								<button class="btn my-2 my-sm-0" type="submit"><i class="ti-search"></i></button>
+							</form>
+								
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" class="form-control simple">
+							</div>
+						</div>
+						
+						<div class="col-lg-6 col-md-12 col-sm-12">
+							<h4>Checkbox & Radio buttons</h4>
+							<ul class="no-ul-list">
+								<li>
+									<input id="a-1" class="checkbox-custom" name="a-1" type="checkbox">
+									<label for="a-1" class="checkbox-custom-label">Air Condition</label>
+								</li>
+								<li>
+									<input id="a-2" class="checkbox-custom" name="a-2" type="checkbox">
+									<label for="a-2" class="checkbox-custom-label">Bedding</label>
+								</li>
+								
+							</ul>
+							
+							<ul class="no-ul-list">
+								<li>
+									<input id="a-p" class="checkbox-custom" name="a-p" type="radio">
+									<label for="a-p" class="checkbox-custom-label">Air Condition</label>
+								</li>
+								<li>
+									<input id="a-c" class="checkbox-custom" name="a-c" type="radio">
+									<label for="a-c" class="checkbox-custom-label">Bedding</label>
+								</li>
+								
+							</ul>
+						</div>
+						
+					</div>
+					<!-- /row -->
+
+					<div class="row mt-3">
+						<div class="col-lg-12 col-md-12">
+							<h4>Lists Style</h4>
+						</div>
+						
+						<!-- Buttons Styles -->			
+						<div class="col-lg-4 col-md-4">
+							<ul class="lists lists-1">
+								<li>A simple light alert</li>
+								<li>A simple light alert</li>
+								<li>A simple light alert</li>
+								<li>A simple light alert</li>
+							</ul>	
+						</div>
+						
+						<!-- Buttons Styles -->			
+						<div class="col-lg-4 col-md-4">
+							<ul class="lists lists-2">
+								<li>A simple light alert</li>
+								<li>A simple light alert</li>
+								<li>A simple light alert</li>
+								<li>A simple light alert</li>
+							</ul>
+						</div>
+						
+						<!-- Buttons Styles -->			
+						<div class="col-lg-4 col-md-4">
+							<ul class="lists lists-3">
+								<li>A simple light alert</li>
+								<li>A simple light alert</li>
+								<li>A simple light alert</li>
+								<li>A simple light alert</li>
+							</ul>
+						</div>
+						
+					</div>					
+					
+				</div>
+						
+			</section>
+			<!-- ============================ Agency List End ================================== -->
+			
+			<!-- ============================== Start Newsletter ================================== -->
+			{% include 'footer1.html' %}
+			<!-- ============================ Footer End ================================== -->
+			
+			<!-- Log In Modal -->
+			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+					<div class="modal-content" id="registermodal">
+						<span class="mod-close" data-dismiss="modal" aria-hidden="true"><i class="ti-close"></i></span>
+						<div class="modal-body">
+							<h4 class="modal-header-title">Log In</h4>
+							<div class="login-form">
+								<form>
+								
+									<div class="form-group">
+										<label>User Name</label>
+										<input type="text" class="form-control" placeholder="Username">
+									</div>
+									
+									<div class="form-group">
+										<label>Password</label>
+										<input type="password" class="form-control" placeholder="*******">
+									</div>
+									
+									<div class="form-group">
+										<button type="submit" class="btn btn-md full-width pop-login">Login</button>
+									</div>
+								
+								</form>
+							</div>
+							
+							<div class="social-login mb-3">
+								<ul>
+									<li>
+										<input id="reg" class="checkbox-custom" name="reg" type="checkbox">
+										<label for="reg" class="checkbox-custom-label">Save Password</label>
+									</li>
+									<li><a href="#" class="theme-cl">Forget Password?</a></li>
+								</ul>
+							</div>
+							
+							<div class="text-center">
+								<p class="mt-2">Haven't Any Account? <a href="register.html" class="link">Click here</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal -->
+			
+			<!-- Sign Up Modal -->
+			<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="sign-up" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+					<div class="modal-content" id="sign-up">
+						<span class="mod-close" data-dismiss="modal" aria-hidden="true"><i class="ti-close"></i></span>
+						<div class="modal-body">
+							<h4 class="modal-header-title">Sign Up</h4>
+							<div class="login-form">
+								<form>
+								
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Full Name">
+									</div>
+									
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Username">
+									</div>
+									
+									<div class="form-group">
+										<input type="password" class="form-control" placeholder="*******">
+									</div>
+
+									
+									<div class="form-group">
+										<button type="submit" class="btn btn-md full-width pop-login">Sign Up</button>
+									</div>
+								
+								</form>
+							</div>
+							<div class="text-center">
+								<p class="mt-3"><i class="ti-user mr-1"></i>Already Have An Account? <a href="#" class="link">Go For LogIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal -->
+			
+			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+			
+
+		</div>
+		<!-- ============================================================== -->
+		<!-- End Wrapper -->
+		<!-- ============================================================== -->
+
+		<!-- ============================================================== -->
+		<!-- All Jquery -->
+		<!-- ============================================================== -->
+		<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'assets/js/select2.min.js' %}"></script>
+		<script src="{% static 'assets/js/slick.js' %}"></script>
+		<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+		<script src="{% static 'assets/js/counterup.min.js' %}"></script>
+		<script src="{% static 'assets/js/custom.js' %}"></script>
+		<!-- ============================================================== -->
+		<!-- This page plugins -->
+		<!-- ============================================================== -->
+
+	</body>
+</html>
